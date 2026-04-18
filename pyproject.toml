@@ -34,4 +34,4 @@ select = ["E", "F", "I", "UP"]
 testpaths = ["tests"]
 
 [tool.setuptools]
-py-modules = ["models", "ner_layer", "regex_layer", "pipeline", "redact", "span_utils", "gliner_layer"]
+py-modules = ["models", "exceptions", "ner_layer", "regex_layer", "pipeline", "redact", "span_utils", "gliner_layer"]

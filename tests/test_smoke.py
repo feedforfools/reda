@@ -5,6 +5,7 @@ import importlib
 
 MODULES = [
     "models",
+    "exceptions",
     "regex_layer",
     "ner_layer",
     "gliner_layer",
