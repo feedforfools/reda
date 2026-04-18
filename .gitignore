@@ -1,0 +1,5 @@
+_*.md
+__pycache__/
+.venv/
+.pytest_cache/
+reda.egg-info/
