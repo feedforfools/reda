@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 .pytest_cache/
 reda.egg-info/
+samples/fascicolo.pdf

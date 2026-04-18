@@ -1,0 +1,43 @@
+# [SYNTHETIC DOCUMENT — no real personal data]
+# PII present: email (×3), IP address (×1), API key pattern (×1),
+#              password strings (×2), JWT fragment (×1)
+# This file simulates a configuration/source file to test whether
+# the pipeline detects technical PII (email, credentials) that NER
+# trained on prose may miss.
+
+# ── app/config.py ─────────────────────────────────────────────────────────────
+
+import os
+
+# Database connection — DO NOT commit real credentials
+DATABASE_URL = os.getenv(
+    "DATABASE_URL",
+    "postgresql://appuser:s3cr3tP@ssw0rd!@192.168.10.45:5432/gestionale_db"
+)
+
+# SMTP relay for invoice notifications
+SMTP_HOST     = "mail.studiocommerciale.it"
+SMTP_PORT     = 587
+SMTP_USER     = "notifiche@studiocommerciale.it"
+SMTP_PASSWORD = "Pa$$w0rd_2026!"
+
+# Third-party API integration (billing provider)
+BILLING_API_KEY    = "sk-a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
+BILLING_API_SECRET = "whsec_XyZ9kLmNpQrStUvWxYz0123456789ab"
+
+# JWT signing secret (HS256)
+JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+
+# Admin contact (used in error emails)
+ADMIN_EMAIL   = "admin@studiocommerciale.it"
+SUPPORT_EMAIL = "supporto@studiocommerciale.it"
+
+# Internal network
+INTERNAL_SERVER_IP = "192.168.10.45"
+BACKUP_SERVER_IP   = "10.0.0.12"
+
+# ── scripts/seed_db.py ────────────────────────────────────────────────────────
+
+# Default admin account seeded on first run — change immediately
+DEFAULT_ADMIN_EMAIL    = "admin@studiocommerciale.it"
+DEFAULT_ADMIN_PASSWORD = "ChangeMe@1234"

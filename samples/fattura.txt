@@ -1,0 +1,60 @@
+# [SYNTHETIC DOCUMENT — no real personal data]
+# PII present: codice fiscale (×2), partita IVA (×1), IBAN (×1),
+#              nome (×2), indirizzo (×2), email (×1), telefono (×1),
+#              importo (×3), data (×3)
+
+FATTURA
+Numero: 2026/042
+Data emissione: 15/04/2026
+Data scadenza: 15/05/2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FORNITORE
+Rossi Marco
+Via della Repubblica, 7
+00185 Roma (RM)
+Codice Fiscale: RSSMRC85M01H501G
+Partita IVA:    02345678904
+Tel.: +39 06 7823451
+E-mail: m.rossi@consulenzafiscale.it
+
+CLIENTE
+Bianchi Laura
+Via Montenapoleone, 3
+20121 Milano (MI)
+Codice Fiscale: BNCLRA78C60F205H
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DESCRIZIONE SERVIZI
+
+1. Consulenza fiscale e tributaria — aprile 2026
+   Redazione dichiarazione dei redditi (modello 730)
+   e assistenza su quesiti IVA                              EUR   800,00
+
+2. Elaborazione buste paga (3 dipendenti, mese di marzo)    EUR   250,00
+
+3. Deposito pratiche CCIAA — visura ordinaria               EUR    80,00
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Imponibile:   EUR 1.130,00
+IVA 22 %:     EUR   248,60
+TOTALE:        EUR 1.378,60
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MODALITÀ DI PAGAMENTO
+Bonifico bancario entro 30 giorni dalla data di emissione.
+
+IBAN: IT60X0542811101000000123456
+Intestato a: Rossi Marco
+
+Causale: Fattura n. 2026/042 del 15/04/2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Documento emesso ai sensi dell'art. 21 del D.P.R. 633/1972.
+Il pagamento oltre la scadenza del 15/05/2026 comporta l'applicazione
+degli interessi di mora ai sensi del D.Lgs. 231/2002.

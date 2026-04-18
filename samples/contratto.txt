@@ -1,0 +1,78 @@
+# [SYNTHETIC DOCUMENT — no real personal data]
+# PII present: codice fiscale (×2), nome (×2), indirizzo (×2),
+#              data (×4), importo (×2)
+
+CONTRATTO DI LOCAZIONE AD USO ABITATIVO
+(artt. 1571 e ss. c.c. — Legge 431/1998)
+
+Stipulato in Milano, il 01/04/2026
+
+tra
+
+LOCATORE
+Rossi Marco
+nato a Roma il 01/05/1985
+residente in Via della Repubblica, 7 — 00185 Roma (RM)
+Codice Fiscale: RSSMRC85M01H501G
+
+e
+
+CONDUTTORE
+Bianchi Laura
+nata a Torino il 20/03/1978
+residente in Via Montenapoleone, 3 — 20121 Milano (MI)
+Codice Fiscale: BNCLRA78C60F205H
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OGGETTO DEL CONTRATTO
+
+Il Locatore concede in locazione al Conduttore l'immobile ad uso abitativo
+sito in:
+
+    Via Colombo, 12 — 20123 Milano (MI)
+    Piano: terzo — interno: 8
+    Superficie commerciale: 75 mq
+
+L'immobile è composto da: soggiorno, due camere da letto, cucina abitabile,
+bagno, ripostiglio e balcone. L'unità è censita al Catasto Fabbricati del
+Comune di Milano al foglio 45, mappale 312, subalterno 8.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DURATA
+
+Il contratto decorre dal 01/04/2026 e si intende stipulato per la durata
+di 12 (dodici) mesi, con scadenza al 31/03/2027, rinnovabile tacitamente
+alle medesime condizioni salvo disdetta scritta con preavviso di 60 giorni.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CANONE E MODALITÀ DI PAGAMENTO
+
+Il canone mensile di locazione è fissato in EUR 950,00 (novecentocinquanta/00),
+da corrispondersi entro il giorno 5 di ogni mese solare mediante bonifico
+bancario sul conto del Locatore:
+
+IBAN: IT60X0542811101000000123456
+Intestato a: Rossi Marco
+
+Per il primo mese il Conduttore versa altresì una caparra confirmatoria
+pari a EUR 1.900,00 (millenovecentezero/00), corrispondente a due mensilità.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OBBLIGHI DEL CONDUTTORE
+
+1. Utilizzare l'immobile esclusivamente per uso abitativo.
+2. Non sublocare né cedere il contratto senza consenso scritto del Locatore.
+3. Riconsegnare l'immobile nello stesso stato in cui è stato ricevuto.
+4. Sostenere le spese di ordinaria manutenzione.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FIRMA DELLE PARTI
+
+Locatore: Rossi Marco          Data: 01/04/2026   _________________
+
+Conduttore: Bianchi Laura      Data: 01/04/2026   _________________

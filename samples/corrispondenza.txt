@@ -1,0 +1,43 @@
+# [SYNTHETIC DOCUMENT — no real personal data]
+# PII present: nome (×3), email (×3), telefono (×2), partita IVA (×1), data (×1)
+
+Da:      Giulia Ferretti <g.ferretti@studioferretti.it>
+A:       info@bancaesempio.it; clienti@bancaesempio.it
+CC:      direzione@studioferretti.it
+Data:    18/04/2026
+Oggetto: Apertura conto corrente aziendale — Studio Ferretti & Associati
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Gentile Ufficio Clienti Aziendali,
+
+mi chiamo Giulia Ferretti, sono la titolare dello Studio Ferretti & Associati,
+con sede legale in Via Pietro Micca, 15 — 10121 Torino (TO).
+
+Vi contatto per avviare la procedura di apertura di un conto corrente
+dedicato all'attività professionale. Vi trasmetto di seguito i dati fiscali
+necessari:
+
+  Ragione sociale:  Studio Ferretti & Associati
+  Partita IVA:      08765432102
+  Codice ATECO:     69.20.11 (Servizi forniti da ragionieri e periti commerciali)
+
+Per qualsiasi comunicazione potete contattarmi ai seguenti recapiti:
+
+  Telefono fisso:  +39 011 4562300
+  Cellulare:       +39 347 8821045
+  E-mail:          g.ferretti@studioferretti.it
+
+La documentazione richiesta (visura camerale, copia del codice fiscale e
+documento di identità) è allegata alla presente e-mail in formato PDF.
+
+Resto a disposizione per eventuali chiarimenti.
+
+Cordiali saluti,
+
+Giulia Ferretti
+Studio Ferretti & Associati
+Via Pietro Micca, 15 — 10121 Torino (TO)
+Tel.: +39 011 4562300 | Cell.: +39 347 8821045
+g.ferretti@studioferretti.it
+P.IVA 08765432102

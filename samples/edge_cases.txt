@@ -1,0 +1,148 @@
+# [SYNTHETIC DOCUMENT — no real personal data]
+# This file is a stress-test fixture for the regex + NER pipeline.
+# It contains:
+#   - Valid PII (must be detected)
+#   - Pattern-matching strings that FAIL validation (false positive bait)
+#   - Near-miss formats and boundary edge cases
+# Each block is annotated with what the test expects.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 1 — CODICE FISCALE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[CF-VALID-1] Codice fiscale corretto, deve essere rilevato:
+RSSMRC85M01H501G
+
+[CF-VALID-2] Secondo codice fiscale corretto:
+BNCLRA78C60F205H
+
+[CF-INVALID-1] Corrisponde al pattern ma il carattere di controllo è errato
+(dovrebbe essere G, non X) — deve essere rifiutato dal validatore:
+RSSMRC85M01H501X
+
+[CF-INVALID-2] Secondo codice con carattere di controllo sbagliato
+(dovrebbe essere H, non X):
+BNCLRA78C60F205X
+
+[CF-INVALID-3] Solo 15 caratteri — manca il carattere di controllo finale,
+non deve corrispondere al pattern a 16 caratteri:
+RSSMRC85M01H501
+
+[CF-INVALID-4] Sequenza di 16 caratteri con cifre nelle posizioni errate —
+non corrisponde al pattern:
+1234567890123456
+
+[CF-BOUNDARY-1] Codice fiscale incorporato in una stringa più lunga senza
+spazi — il comportamento dipende dai word boundary del pattern:
+PREFIXRSSMRC85M01H501GSUFFIX
+
+[CF-BOUNDARY-2] Codice fiscale separato da punteggiatura:
+(RSSMRC85M01H501G)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 2 — PARTITA IVA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[PIVA-VALID-1] Partita IVA corretta (checksum valido):
+02345678904
+
+[PIVA-INVALID-1] 11 cifre ma checksum errato (ultima cifra dovrebbe essere 4,
+non 9) — deve essere rifiutata dal validatore:
+02345678909
+
+[PIVA-INVALID-2] Solo 10 cifre — troppo corta, non deve corrispondere:
+0234567890
+
+[PIVA-INVALID-3] 12 cifre — troppo lunga:
+023456789041
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 3 — IBAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[IBAN-VALID-1] IBAN italiano corretto (formato IT + 25 caratteri):
+IT60X0542811101000000123456
+
+[IBAN-INVALID-1] IBAN tedesco — non deve corrispondere al pattern italiano:
+DE89370400440532013000
+
+[IBAN-INVALID-2] Inizia con IT ma ha solo 24 caratteri totali — troppo corto:
+IT60X054281110100000012345
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 4 — DATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[DATE-VALID-1] Formato gg/mm/aaaa:
+18/04/2026
+
+[DATE-VALID-2] Formato gg-mm-aaaa:
+01-01-2026
+
+[DATE-VALID-3] Formato gg.mm.aaaa:
+31.12.2025
+
+[DATE-EDGE-1] Il pattern regex corrisponde ma la data è logicamente invalida
+(giorno 32) — il layer regex rileva il pattern, la validazione semantica
+è fuori scope per questo layer:
+32/01/2026
+
+[DATE-EDGE-2] Numero a 4 cifre che NON è una data:
+2026
+
+[DATE-EDGE-3] Anno con solo 2 cifre — fuori formato target:
+18/04/26
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 5 — EMAIL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[EMAIL-VALID-1] Indirizzo email standard:
+m.rossi@consulenzafiscale.it
+
+[EMAIL-VALID-2] Indirizzo con sottodominio:
+notifiche@mail.studiocommerciale.it
+
+[EMAIL-INVALID-1] Manca il carattere @ — non è un indirizzo email:
+m.rossiconsulenzafiscale.it
+
+[EMAIL-INVALID-2] Doppio punto nel dominio — potrebbe o meno corrispondere
+a seconda dello strictness del pattern:
+user@esempio..it
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 6 — TELEFONO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[TEL-VALID-1] Cellulare con prefisso internazionale +39:
++39 347 8821045
+
+[TEL-VALID-2] Fisso con prefisso 0:
++39 06 7823451
+
+[TEL-VALID-3] Cellulare senza prefisso internazionale:
+347 8821045
+
+[TEL-EDGE-1] Numero troppo corto per essere un telefono italiano:
+347 123
+
+[TEL-EDGE-2] Sequenza numerica lunga che non è un telefono:
+1234567890123456
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEZIONE 7 — FALSI POSITIVI DA CONTESTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[FP-1] Stringa uppercase 16 caratteri che NON è un codice fiscale (struttura
+della lunghezza giusta ma caratteri nelle posizioni sbagliate):
+AAAA000000000000
+
+[FP-2] Riferimento normativo che include numeri/lettere simili a P.IVA:
+D.P.R. n. 63319721
+
+[FP-3] Codice prodotto alfanumerico di 11 cifre (simile a P.IVA per lunghezza):
+SKU-02345678904
+
+[FP-4] IP address — non è un tipo PII rilevato dal layer regex ma potrebbe
+essere estratto dal layer NER come entità:
+192.168.10.45
