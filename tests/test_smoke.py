@@ -2,6 +2,7 @@
 
 import importlib
 
+import pytest
 
 MODULES = [
     "models",
@@ -15,8 +16,8 @@ MODULES = [
 ]
 
 
-def test_all_modules_importable() -> None:
+@pytest.mark.parametrize("module_name", MODULES)
+def test_module_importable(module_name: str) -> None:
     """Each module stub must import without raising any exception."""
-    for name in MODULES:
-        mod = importlib.import_module(name)
-        assert mod is not None, f"Failed to import {name}"
+    mod = importlib.import_module(module_name)
+    assert mod is not None
